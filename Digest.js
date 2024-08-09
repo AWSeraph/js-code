@@ -1,0 +1,1 @@
+javascript:(async function(){alert(Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(prompt('Digest it:'))))).map((b) => b.toString(16).padStart(2, "0")).join(""))})();

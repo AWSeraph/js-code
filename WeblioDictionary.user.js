@@ -16,7 +16,6 @@ document.onmousemove = (e) =>{
 }
 
 window.onkeyup = (e) =>{
-  console.log(e);
   if(e.key != 'Control') return;
   
   let selText = window.getSelection().toString();
